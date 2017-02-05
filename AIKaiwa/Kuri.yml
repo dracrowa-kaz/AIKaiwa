@@ -1,0 +1,8 @@
+TemplateRootPath: ./
+ProjectRootPath: ./
+ProjectFileName: AIKaiwa.xcodeproj
+GenerateRootPath: ./AIKaiwa/
+Target: AIKaiwa
+
+View:
+ CustomSuffix: ViewController

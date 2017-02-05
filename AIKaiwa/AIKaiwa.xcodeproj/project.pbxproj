@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11PK78BVPHI1DO03VUR2NZBD /* ChatRoomRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = HZZON1BXC2MX7O71TNVFFNMB /* ChatRoomRepositoryImpl.swift */; };
+		1TJGOW93ECKJ7I95CR2FGZBH /* ChatRoomEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1K3M2CR28OXVJOH4BWBP1ZKO /* ChatRoomEntity.swift */; };
+		2HBIW0NO4FKK1ORJAC31YNI9 /* ChatRoomDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = HLZCRYKRV6WVXJMNHBDYRPHB /* ChatRoomDataStore.swift */; };
+		6E60E60F1E471FDC00520462 /* ChatUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E60E60D1E471FDC00520462 /* ChatUserTableViewCell.xib */; };
+		6E614DD31E4614B6006835E7 /* ChatHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E614DD11E4614B6006835E7 /* ChatHistoryTableViewCell.swift */; };
+		6E614DD41E4614B6006835E7 /* ChatHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E614DD21E4614B6006835E7 /* ChatHistoryTableViewCell.xib */; };
+		6E8DCF3C1E460DEB00844AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DCF3B1E460DEB00844AC6 /* AppDelegate.swift */; };
+		6E8DCF411E460DEB00844AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E8DCF3F1E460DEB00844AC6 /* Main.storyboard */; };
+		6E8DCF431E460DEB00844AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8DCF421E460DEB00844AC6 /* Assets.xcassets */; };
+		6E8DCF461E460DEB00844AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E8DCF441E460DEB00844AC6 /* LaunchScreen.storyboard */; };
+		6E8DCF511E460DEB00844AC6 /* AIKaiwaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DCF501E460DEB00844AC6 /* AIKaiwaTests.swift */; };
+		6E8DCF5C1E460DEB00844AC6 /* AIKaiwaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DCF5B1E460DEB00844AC6 /* AIKaiwaUITests.swift */; };
+		6GCFEGM14HNXO909SDNTTP6V /* ChatRoomViewControllerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CI0ECN7U58N52XZG0MP7BNLV /* ChatRoomViewControllerImpl.swift */; };
+		6KKM0B5FOEQRIAZW98TDWFQP /* ChatRoomBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = RTTLLCBYZY74RMD90T1HT8TO /* ChatRoomBuilder.swift */; };
+		760W0J5YQ4X9F0DKZXWFTTOQ /* ChatRoomWireframeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = LBSK6MRF2MRJMHWSLH8SL5SR /* ChatRoomWireframeImpl.swift */; };
+		7RTK6E379C7P4XBSNO4RW3EM /* ChatRoomWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FVDMSHHJUXVK2HI1CSPWN2RG /* ChatRoomWireframe.swift */; };
+		96YMLHM1TB0U0IYLMYQQFL3B /* ChatRoomModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = G7GL2126FZYXWW8OLS2813AB /* ChatRoomModelImpl.swift */; };
+		AYO57OOH6RU7WNZQWKZWF5VK /* ChatRoomEntityImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32GHBUQ1OMOGG03MPSJZ7G4O /* ChatRoomEntityImpl.swift */; };
+		BAF98DC7EDA9893D461CCA00 /* Pods_AIKaiwaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6351C242DDA5031037A43F90 /* Pods_AIKaiwaTests.framework */; };
+		D4YCODOB20R6ZB9CXGCS6SRY /* ChatRoomTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = LXV5R88XEACXT5E6DZ6MK6IW /* ChatRoomTranslator.swift */; };
+		DY2KYGM3RNX62UF9ZR8E2Y3O /* ChatRoomUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EGMAAJTMOZZUC5O99Q4VKTF /* ChatRoomUseCase.swift */; };
+		E1832CDC0981D7E2A4E00E81 /* Pods_AIKaiwaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805F1FF6A2E11CA385CA0D3A /* Pods_AIKaiwaUITests.framework */; };
+		EWFRCZVN3COB5PS4UX8ULX29 /* ChatRoomRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AZ3O49Y1X2FH4NJWATL19MBP /* ChatRoomRepository.swift */; };
+		FAC0A51F05355B8F8F2411B8 /* Pods_AIKaiwa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E49C2D568718EEA41713F7C /* Pods_AIKaiwa.framework */; };
+		GDBYBZ6EGNDBHTZB1ITZYOIW /* ChatRoomPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = XH5S36F6RCP05WPFY3O2TN7D /* ChatRoomPresenterImpl.swift */; };
+		HDVNJIDP0XQGQB3LZPYEREKA /* ChatRoomTranslatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = N7JHTYSM3LJPLQ8NQXS2LNDI /* ChatRoomTranslatorImpl.swift */; };
+		K0QVIYA7U7CBCQ2M2ADHF2YB /* ChatRoomDataStoreImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = S8V07KM58XI3CL8P9YUFSJ5N /* ChatRoomDataStoreImpl.swift */; };
+		KZ7Q9R0EJNIHNM2W4P2WPGYH /* ChatRoomUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = IUBA66QYWH2V1FAC8Y8KJQSG /* ChatRoomUseCaseImpl.swift */; };
+		QGN2UT5VYZ9WNJOGIM1O7SZN /* ChatRoomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = J3355J6COVYD4DZDDVHSBRQ7 /* ChatRoomPresenter.swift */; };
+		T3TN5FFEF7ADLIR0QEGUGL88 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = TJ1GC504PJAV9AV30IH3XWQW /* ChatRoomViewController.swift */; };
+		WLK27ULUU8J3OAW448K4SHE7 /* ChatRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29IGAPJSVLR08M9JJ8W1G6AN /* ChatRoomModel.swift */; };
+		XGIEDIYXZH3C7SP4X1B5CEYB /* ChatRoomBuilderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = MQB33BB9P5ABZ6BP3LMCDYS7 /* ChatRoomBuilderImpl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E8DCF4D1E460DEB00844AC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E8DCF301E460DEA00844AC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E8DCF371E460DEA00844AC6;
+			remoteInfo = AIKaiwa;
+		};
+		6E8DCF581E460DEB00844AC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E8DCF301E460DEA00844AC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E8DCF371E460DEA00844AC6;
+			remoteInfo = AIKaiwa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1K3M2CR28OXVJOH4BWBP1ZKO /* ChatRoomEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomEntity.swift; sourceTree = "<group>"; };
+		29IGAPJSVLR08M9JJ8W1G6AN /* ChatRoomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomModel.swift; sourceTree = "<group>"; };
+		32GHBUQ1OMOGG03MPSJZ7G4O /* ChatRoomEntityImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomEntityImpl.swift; sourceTree = "<group>"; };
+		4EGMAAJTMOZZUC5O99Q4VKTF /* ChatRoomUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomUseCase.swift; sourceTree = "<group>"; };
+		5E49C2D568718EEA41713F7C /* Pods_AIKaiwa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIKaiwa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6351C242DDA5031037A43F90 /* Pods_AIKaiwaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIKaiwaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B254B8144371D865F42CD0 /* Pods-AIKaiwaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIKaiwaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AIKaiwaTests/Pods-AIKaiwaTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D5AC5499F0F4C55E4C5DB72 /* Pods-AIKaiwaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIKaiwaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AIKaiwaUITests/Pods-AIKaiwaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E60E60D1E471FDC00520462 /* ChatUserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatUserTableViewCell.xib; sourceTree = "<group>"; };
+		6E614DD11E4614B6006835E7 /* ChatHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		6E614DD21E4614B6006835E7 /* ChatHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		6E8DCF381E460DEB00844AC6 /* AIKaiwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIKaiwa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8DCF3B1E460DEB00844AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E8DCF401E460DEB00844AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E8DCF421E460DEB00844AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E8DCF451E460DEB00844AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E8DCF471E460DEB00844AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E8DCF4C1E460DEB00844AC6 /* AIKaiwaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIKaiwaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8DCF501E460DEB00844AC6 /* AIKaiwaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIKaiwaTests.swift; sourceTree = "<group>"; };
+		6E8DCF521E460DEB00844AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E8DCF571E460DEB00844AC6 /* AIKaiwaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIKaiwaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8DCF5B1E460DEB00844AC6 /* AIKaiwaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIKaiwaUITests.swift; sourceTree = "<group>"; };
+		6E8DCF5D1E460DEB00844AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F66B651810FA84CB4C39217 /* Pods-AIKaiwaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIKaiwaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AIKaiwaTests/Pods-AIKaiwaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		805F1FF6A2E11CA385CA0D3A /* Pods_AIKaiwaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIKaiwaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B832655C77022961F88513 /* Pods-AIKaiwa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIKaiwa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AIKaiwa/Pods-AIKaiwa.debug.xcconfig"; sourceTree = "<group>"; };
+		A6CD01847C73AA54E3CAF7A3 /* Pods-AIKaiwaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIKaiwaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AIKaiwaUITests/Pods-AIKaiwaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AZ3O49Y1X2FH4NJWATL19MBP /* ChatRoomRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomRepository.swift; sourceTree = "<group>"; };
+		CI0ECN7U58N52XZG0MP7BNLV /* ChatRoomViewControllerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewControllerImpl.swift; sourceTree = "<group>"; };
+		F3B2F374247B603AA177DD5B /* Pods-AIKaiwa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIKaiwa.release.xcconfig"; path = "Pods/Target Support Files/Pods-AIKaiwa/Pods-AIKaiwa.release.xcconfig"; sourceTree = "<group>"; };
+		FVDMSHHJUXVK2HI1CSPWN2RG /* ChatRoomWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomWireframe.swift; sourceTree = "<group>"; };
+		G7GL2126FZYXWW8OLS2813AB /* ChatRoomModelImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomModelImpl.swift; sourceTree = "<group>"; };
+		HLZCRYKRV6WVXJMNHBDYRPHB /* ChatRoomDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomDataStore.swift; sourceTree = "<group>"; };
+		HZZON1BXC2MX7O71TNVFFNMB /* ChatRoomRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomRepositoryImpl.swift; sourceTree = "<group>"; };
+		IUBA66QYWH2V1FAC8Y8KJQSG /* ChatRoomUseCaseImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomUseCaseImpl.swift; sourceTree = "<group>"; };
+		J3355J6COVYD4DZDDVHSBRQ7 /* ChatRoomPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomPresenter.swift; sourceTree = "<group>"; };
+		LBSK6MRF2MRJMHWSLH8SL5SR /* ChatRoomWireframeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomWireframeImpl.swift; sourceTree = "<group>"; };
+		LXV5R88XEACXT5E6DZ6MK6IW /* ChatRoomTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomTranslator.swift; sourceTree = "<group>"; };
+		MQB33BB9P5ABZ6BP3LMCDYS7 /* ChatRoomBuilderImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomBuilderImpl.swift; sourceTree = "<group>"; };
+		N7JHTYSM3LJPLQ8NQXS2LNDI /* ChatRoomTranslatorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomTranslatorImpl.swift; sourceTree = "<group>"; };
+		RTTLLCBYZY74RMD90T1HT8TO /* ChatRoomBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomBuilder.swift; sourceTree = "<group>"; };
+		S8V07KM58XI3CL8P9YUFSJ5N /* ChatRoomDataStoreImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomDataStoreImpl.swift; sourceTree = "<group>"; };
+		TJ1GC504PJAV9AV30IH3XWQW /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		XH5S36F6RCP05WPFY3O2TN7D /* ChatRoomPresenterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomPresenterImpl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E8DCF351E460DEA00844AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC0A51F05355B8F8F2411B8 /* Pods_AIKaiwa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DCF491E460DEB00844AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF98DC7EDA9893D461CCA00 /* Pods_AIKaiwaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DCF541E460DEB00844AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1832CDC0981D7E2A4E00E81 /* Pods_AIKaiwaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1RQPWRI4ZX6X432Q9AHQ38O5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AZ3O49Y1X2FH4NJWATL19MBP /* ChatRoomRepository.swift */,
+				HZZON1BXC2MX7O71TNVFFNMB /* ChatRoomRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4SLOFJ32Z5AI8RF4FOL2KC9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E60E6101E4720AD00520462 /* TableViewCell */,
+				TJ1GC504PJAV9AV30IH3XWQW /* ChatRoomViewController.swift */,
+				CI0ECN7U58N52XZG0MP7BNLV /* ChatRoomViewControllerImpl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6E60E6101E4720AD00520462 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6E614DD11E4614B6006835E7 /* ChatHistoryTableViewCell.swift */,
+				6E614DD21E4614B6006835E7 /* ChatHistoryTableViewCell.xib */,
+				6E60E60D1E471FDC00520462 /* ChatUserTableViewCell.xib */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		6E8DCF2F1E460DEA00844AC6 = {
+			isa = PBXGroup;
+			children = (
+				6E8DCF3A1E460DEB00844AC6 /* AIKaiwa */,
+				6E8DCF4F1E460DEB00844AC6 /* AIKaiwaTests */,
+				6E8DCF5A1E460DEB00844AC6 /* AIKaiwaUITests */,
+				6E8DCF391E460DEB00844AC6 /* Products */,
+				7512AFEA41E5EC35AC4A3BEA /* Pods */,
+				C2A40856EB31B8CD83EFA0F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E8DCF391E460DEB00844AC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E8DCF381E460DEB00844AC6 /* AIKaiwa.app */,
+				6E8DCF4C1E460DEB00844AC6 /* AIKaiwaTests.xctest */,
+				6E8DCF571E460DEB00844AC6 /* AIKaiwaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E8DCF3A1E460DEB00844AC6 /* AIKaiwa */ = {
+			isa = PBXGroup;
+			children = (
+				6E8DCF3B1E460DEB00844AC6 /* AppDelegate.swift */,
+				6E8DCF3F1E460DEB00844AC6 /* Main.storyboard */,
+				6E8DCF421E460DEB00844AC6 /* Assets.xcassets */,
+				6E8DCF441E460DEB00844AC6 /* LaunchScreen.storyboard */,
+				6E8DCF471E460DEB00844AC6 /* Info.plist */,
+				6RID8EJ0QQ8R66MHBMHOKRHW /* ChatRoom */,
+			);
+			path = AIKaiwa;
+			sourceTree = "<group>";
+		};
+		6E8DCF4F1E460DEB00844AC6 /* AIKaiwaTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E8DCF501E460DEB00844AC6 /* AIKaiwaTests.swift */,
+				6E8DCF521E460DEB00844AC6 /* Info.plist */,
+			);
+			path = AIKaiwaTests;
+			sourceTree = "<group>";
+		};
+		6E8DCF5A1E460DEB00844AC6 /* AIKaiwaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E8DCF5B1E460DEB00844AC6 /* AIKaiwaUITests.swift */,
+				6E8DCF5D1E460DEB00844AC6 /* Info.plist */,
+			);
+			path = AIKaiwaUITests;
+			sourceTree = "<group>";
+		};
+		6RID8EJ0QQ8R66MHBMHOKRHW /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				KY30DQIY0UWEG5DIQP1N8GGF /* Entity */,
+				ZF1FALPYJWPA7UW9JGAIX35R /* DataStore */,
+				1RQPWRI4ZX6X432Q9AHQ38O5 /* Repository */,
+				UGESVI3LQE5MX0M0A0SIS5LD /* UseCase */,
+				MBBKUR1RTZS8BIKQ09O983CF /* Translator */,
+				74VQDTRBD8WCE82MENE2LWW0 /* Model */,
+				BZSAXAV77QWAMJK9YS2AEN0Z /* Presenter */,
+				4SLOFJ32Z5AI8RF4FOL2KC9D /* View */,
+				BA10BOEQ70P0JZCMZXEGZBV6 /* Wireframe */,
+				NFD9KVPZDPQYAUQLJW8MJSDY /* Builder */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		74VQDTRBD8WCE82MENE2LWW0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29IGAPJSVLR08M9JJ8W1G6AN /* ChatRoomModel.swift */,
+				G7GL2126FZYXWW8OLS2813AB /* ChatRoomModelImpl.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7512AFEA41E5EC35AC4A3BEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81B832655C77022961F88513 /* Pods-AIKaiwa.debug.xcconfig */,
+				F3B2F374247B603AA177DD5B /* Pods-AIKaiwa.release.xcconfig */,
+				6F66B651810FA84CB4C39217 /* Pods-AIKaiwaTests.debug.xcconfig */,
+				67B254B8144371D865F42CD0 /* Pods-AIKaiwaTests.release.xcconfig */,
+				6D5AC5499F0F4C55E4C5DB72 /* Pods-AIKaiwaUITests.debug.xcconfig */,
+				A6CD01847C73AA54E3CAF7A3 /* Pods-AIKaiwaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA10BOEQ70P0JZCMZXEGZBV6 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				FVDMSHHJUXVK2HI1CSPWN2RG /* ChatRoomWireframe.swift */,
+				LBSK6MRF2MRJMHWSLH8SL5SR /* ChatRoomWireframeImpl.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		BZSAXAV77QWAMJK9YS2AEN0Z /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				J3355J6COVYD4DZDDVHSBRQ7 /* ChatRoomPresenter.swift */,
+				XH5S36F6RCP05WPFY3O2TN7D /* ChatRoomPresenterImpl.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C2A40856EB31B8CD83EFA0F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E49C2D568718EEA41713F7C /* Pods_AIKaiwa.framework */,
+				6351C242DDA5031037A43F90 /* Pods_AIKaiwaTests.framework */,
+				805F1FF6A2E11CA385CA0D3A /* Pods_AIKaiwaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		KY30DQIY0UWEG5DIQP1N8GGF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1K3M2CR28OXVJOH4BWBP1ZKO /* ChatRoomEntity.swift */,
+				32GHBUQ1OMOGG03MPSJZ7G4O /* ChatRoomEntityImpl.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		MBBKUR1RTZS8BIKQ09O983CF /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				LXV5R88XEACXT5E6DZ6MK6IW /* ChatRoomTranslator.swift */,
+				N7JHTYSM3LJPLQ8NQXS2LNDI /* ChatRoomTranslatorImpl.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		NFD9KVPZDPQYAUQLJW8MJSDY /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				RTTLLCBYZY74RMD90T1HT8TO /* ChatRoomBuilder.swift */,
+				MQB33BB9P5ABZ6BP3LMCDYS7 /* ChatRoomBuilderImpl.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		UGESVI3LQE5MX0M0A0SIS5LD /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4EGMAAJTMOZZUC5O99Q4VKTF /* ChatRoomUseCase.swift */,
+				IUBA66QYWH2V1FAC8Y8KJQSG /* ChatRoomUseCaseImpl.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		ZF1FALPYJWPA7UW9JGAIX35R /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				HLZCRYKRV6WVXJMNHBDYRPHB /* ChatRoomDataStore.swift */,
+				S8V07KM58XI3CL8P9YUFSJ5N /* ChatRoomDataStoreImpl.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E8DCF371E460DEA00844AC6 /* AIKaiwa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8DCF601E460DEB00844AC6 /* Build configuration list for PBXNativeTarget "AIKaiwa" */;
+			buildPhases = (
+				ACED9CCA6B9E0D703E4DAD99 /* [CP] Check Pods Manifest.lock */,
+				6E8DCF341E460DEA00844AC6 /* Sources */,
+				6E8DCF351E460DEA00844AC6 /* Frameworks */,
+				6E8DCF361E460DEA00844AC6 /* Resources */,
+				103F0E69B3B0FA748D37D4C8 /* [CP] Embed Pods Frameworks */,
+				2D99D602B531B831B4F921E7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIKaiwa;
+			productName = AIKaiwa;
+			productReference = 6E8DCF381E460DEB00844AC6 /* AIKaiwa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E8DCF4B1E460DEB00844AC6 /* AIKaiwaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8DCF631E460DEB00844AC6 /* Build configuration list for PBXNativeTarget "AIKaiwaTests" */;
+			buildPhases = (
+				AFCF4A7867B861B1A632BF14 /* [CP] Check Pods Manifest.lock */,
+				6E8DCF481E460DEB00844AC6 /* Sources */,
+				6E8DCF491E460DEB00844AC6 /* Frameworks */,
+				6E8DCF4A1E460DEB00844AC6 /* Resources */,
+				442A039115DBCD0C60EAC57E /* [CP] Embed Pods Frameworks */,
+				8697DA0792C086C96F8D1B20 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E8DCF4E1E460DEB00844AC6 /* PBXTargetDependency */,
+			);
+			name = AIKaiwaTests;
+			productName = AIKaiwaTests;
+			productReference = 6E8DCF4C1E460DEB00844AC6 /* AIKaiwaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E8DCF561E460DEB00844AC6 /* AIKaiwaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8DCF661E460DEB00844AC6 /* Build configuration list for PBXNativeTarget "AIKaiwaUITests" */;
+			buildPhases = (
+				0E66DB861DAC6BE2CAADECC1 /* [CP] Check Pods Manifest.lock */,
+				6E8DCF531E460DEB00844AC6 /* Sources */,
+				6E8DCF541E460DEB00844AC6 /* Frameworks */,
+				6E8DCF551E460DEB00844AC6 /* Resources */,
+				4D94CB702C8D74D9D7742DD6 /* [CP] Embed Pods Frameworks */,
+				FB6A5AE45A51C0E7436044B3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E8DCF591E460DEB00844AC6 /* PBXTargetDependency */,
+			);
+			name = AIKaiwaUITests;
+			productName = AIKaiwaUITests;
+			productReference = 6E8DCF571E460DEB00844AC6 /* AIKaiwaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E8DCF301E460DEA00844AC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = kaz;
+				TargetAttributes = {
+					6E8DCF371E460DEA00844AC6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 88P62HTLQ5;
+						ProvisioningStyle = Automatic;
+					};
+					6E8DCF4B1E460DEB00844AC6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6E8DCF371E460DEA00844AC6;
+					};
+					6E8DCF561E460DEB00844AC6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6E8DCF371E460DEA00844AC6;
+					};
+				};
+			};
+			buildConfigurationList = 6E8DCF331E460DEA00844AC6 /* Build configuration list for PBXProject "AIKaiwa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E8DCF2F1E460DEA00844AC6;
+			productRefGroup = 6E8DCF391E460DEB00844AC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E8DCF371E460DEA00844AC6 /* AIKaiwa */,
+				6E8DCF4B1E460DEB00844AC6 /* AIKaiwaTests */,
+				6E8DCF561E460DEB00844AC6 /* AIKaiwaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E8DCF361E460DEA00844AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8DCF461E460DEB00844AC6 /* LaunchScreen.storyboard in Resources */,
+				6E8DCF431E460DEB00844AC6 /* Assets.xcassets in Resources */,
+				6E60E60F1E471FDC00520462 /* ChatUserTableViewCell.xib in Resources */,
+				6E614DD41E4614B6006835E7 /* ChatHistoryTableViewCell.xib in Resources */,
+				6E8DCF411E460DEB00844AC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DCF4A1E460DEB00844AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DCF551E460DEB00844AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E66DB861DAC6BE2CAADECC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		103F0E69B3B0FA748D37D4C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AIKaiwa/Pods-AIKaiwa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D99D602B531B831B4F921E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AIKaiwa/Pods-AIKaiwa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		442A039115DBCD0C60EAC57E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AIKaiwaTests/Pods-AIKaiwaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D94CB702C8D74D9D7742DD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AIKaiwaUITests/Pods-AIKaiwaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8697DA0792C086C96F8D1B20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AIKaiwaTests/Pods-AIKaiwaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACED9CCA6B9E0D703E4DAD99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFCF4A7867B861B1A632BF14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB6A5AE45A51C0E7436044B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AIKaiwaUITests/Pods-AIKaiwaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E8DCF341E460DEA00844AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8DCF3C1E460DEB00844AC6 /* AppDelegate.swift in Sources */,
+				1TJGOW93ECKJ7I95CR2FGZBH /* ChatRoomEntity.swift in Sources */,
+				AYO57OOH6RU7WNZQWKZWF5VK /* ChatRoomEntityImpl.swift in Sources */,
+				2HBIW0NO4FKK1ORJAC31YNI9 /* ChatRoomDataStore.swift in Sources */,
+				K0QVIYA7U7CBCQ2M2ADHF2YB /* ChatRoomDataStoreImpl.swift in Sources */,
+				EWFRCZVN3COB5PS4UX8ULX29 /* ChatRoomRepository.swift in Sources */,
+				11PK78BVPHI1DO03VUR2NZBD /* ChatRoomRepositoryImpl.swift in Sources */,
+				DY2KYGM3RNX62UF9ZR8E2Y3O /* ChatRoomUseCase.swift in Sources */,
+				6E614DD31E4614B6006835E7 /* ChatHistoryTableViewCell.swift in Sources */,
+				KZ7Q9R0EJNIHNM2W4P2WPGYH /* ChatRoomUseCaseImpl.swift in Sources */,
+				D4YCODOB20R6ZB9CXGCS6SRY /* ChatRoomTranslator.swift in Sources */,
+				HDVNJIDP0XQGQB3LZPYEREKA /* ChatRoomTranslatorImpl.swift in Sources */,
+				WLK27ULUU8J3OAW448K4SHE7 /* ChatRoomModel.swift in Sources */,
+				96YMLHM1TB0U0IYLMYQQFL3B /* ChatRoomModelImpl.swift in Sources */,
+				QGN2UT5VYZ9WNJOGIM1O7SZN /* ChatRoomPresenter.swift in Sources */,
+				GDBYBZ6EGNDBHTZB1ITZYOIW /* ChatRoomPresenterImpl.swift in Sources */,
+				T3TN5FFEF7ADLIR0QEGUGL88 /* ChatRoomViewController.swift in Sources */,
+				6GCFEGM14HNXO909SDNTTP6V /* ChatRoomViewControllerImpl.swift in Sources */,
+				7RTK6E379C7P4XBSNO4RW3EM /* ChatRoomWireframe.swift in Sources */,
+				760W0J5YQ4X9F0DKZXWFTTOQ /* ChatRoomWireframeImpl.swift in Sources */,
+				6KKM0B5FOEQRIAZW98TDWFQP /* ChatRoomBuilder.swift in Sources */,
+				XGIEDIYXZH3C7SP4X1B5CEYB /* ChatRoomBuilderImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DCF481E460DEB00844AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8DCF511E460DEB00844AC6 /* AIKaiwaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DCF531E460DEB00844AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8DCF5C1E460DEB00844AC6 /* AIKaiwaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E8DCF4E1E460DEB00844AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E8DCF371E460DEA00844AC6 /* AIKaiwa */;
+			targetProxy = 6E8DCF4D1E460DEB00844AC6 /* PBXContainerItemProxy */;
+		};
+		6E8DCF591E460DEB00844AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E8DCF371E460DEA00844AC6 /* AIKaiwa */;
+			targetProxy = 6E8DCF581E460DEB00844AC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E8DCF3F1E460DEB00844AC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E8DCF401E460DEB00844AC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E8DCF441E460DEB00844AC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E8DCF451E460DEB00844AC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E8DCF5E1E460DEB00844AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E8DCF5F1E460DEB00844AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E8DCF611E460DEB00844AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B832655C77022961F88513 /* Pods-AIKaiwa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88P62HTLQ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AIKaiwa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = personalkaz.AIKaiwa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6E8DCF621E460DEB00844AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B2F374247B603AA177DD5B /* Pods-AIKaiwa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88P62HTLQ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AIKaiwa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = personalkaz.AIKaiwa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6E8DCF641E460DEB00844AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F66B651810FA84CB4C39217 /* Pods-AIKaiwaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AIKaiwaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = personalkaz.AIKaiwaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIKaiwa.app/AIKaiwa";
+			};
+			name = Debug;
+		};
+		6E8DCF651E460DEB00844AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B254B8144371D865F42CD0 /* Pods-AIKaiwaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AIKaiwaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = personalkaz.AIKaiwaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIKaiwa.app/AIKaiwa";
+			};
+			name = Release;
+		};
+		6E8DCF671E460DEB00844AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5AC5499F0F4C55E4C5DB72 /* Pods-AIKaiwaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AIKaiwaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = personalkaz.AIKaiwaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AIKaiwa;
+			};
+			name = Debug;
+		};
+		6E8DCF681E460DEB00844AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6CD01847C73AA54E3CAF7A3 /* Pods-AIKaiwaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AIKaiwaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = personalkaz.AIKaiwaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AIKaiwa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E8DCF331E460DEA00844AC6 /* Build configuration list for PBXProject "AIKaiwa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E8DCF5E1E460DEB00844AC6 /* Debug */,
+				6E8DCF5F1E460DEB00844AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E8DCF601E460DEB00844AC6 /* Build configuration list for PBXNativeTarget "AIKaiwa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E8DCF611E460DEB00844AC6 /* Debug */,
+				6E8DCF621E460DEB00844AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E8DCF631E460DEB00844AC6 /* Build configuration list for PBXNativeTarget "AIKaiwaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E8DCF641E460DEB00844AC6 /* Debug */,
+				6E8DCF651E460DEB00844AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E8DCF661E460DEB00844AC6 /* Build configuration list for PBXNativeTarget "AIKaiwaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E8DCF671E460DEB00844AC6 /* Debug */,
+				6E8DCF681E460DEB00844AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E8DCF301E460DEA00844AC6 /* Project object */;
+}
