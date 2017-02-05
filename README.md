@@ -9,7 +9,7 @@ Your text will send to AI API server , and you can receive text from AI bot.
 Please enjoy talking to AI.  
 
 ## Demo
-![Imgur](http://i.imgur.com/sxMHueX.gifv)
+![Imgur](http://i.imgur.com/sxMHueX.gif)
 
 ## Requirement
 Swift 3   
